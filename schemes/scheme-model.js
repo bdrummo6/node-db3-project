@@ -32,8 +32,10 @@ async function add(scheme) {
 }
 
 
-function update(changes, id) {
-    return db('schemes').where({ id }).update(changes);
+async function update(changes, id) {
+    await db('schemes').update(changes).where('id', id);
+    
+    return db('schemes').where({ id }).first();
 }
 
 

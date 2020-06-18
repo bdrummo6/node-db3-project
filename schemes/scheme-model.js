@@ -25,8 +25,10 @@ function findSteps(id) {
                       .orderBy('step_number');
 }
 
-function add(scheme) {
+async function add(scheme) {
+    const [id] = await db('schemes').insert(scheme);
 
+    return db('schemes').where({ id }).first();
 }
 
 

@@ -48,7 +48,7 @@ router.get('/:id/steps', (req, res) => {
   });
 });
 
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
   const schemeData = req.body;
 
   Schemes.add(schemeData)

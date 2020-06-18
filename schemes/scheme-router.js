@@ -14,6 +14,7 @@ router.get('/', (req, res) => {
   });
 });
 
+
 router.get('/:id', (req, res) => {
   const { id } = req.params;
 
@@ -29,6 +30,7 @@ router.get('/:id', (req, res) => {
     res.status(500).json({ message: 'Failed to get schemes' });
   });
 });
+
 
 router.get('/:id/steps', (req, res) => {
   const { id } = req.params;

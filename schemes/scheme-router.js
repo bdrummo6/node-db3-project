@@ -60,6 +60,7 @@ router.post('/', async (req, res) => {
   });
 });
 
+// (Strech) Add a step to for a specified scheme
 router.post('/:id/steps', (req, res) => {
   const stepData = req.body;
   const { id } = req.params; 

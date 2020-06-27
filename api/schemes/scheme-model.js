@@ -1,4 +1,4 @@
-const db = require('../data/dbConfig');
+const db = require('../../data/dbConfig');
 
 // Exports all helper functions for use in the scheme-router
 module.exports = {

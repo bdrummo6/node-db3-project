@@ -1,7 +1,7 @@
 const express = require('express');
 
-const welcomeRouter = require('./welcome/welcome-router.js');
-const schemeRouter = require('./schemes/scheme-router.js');
+const welcomeRouter = require('./api/welcome/welcome-router.js');
+const schemeRouter = require('./api/schemes/scheme-router.js');
 
 const server = express();
 
